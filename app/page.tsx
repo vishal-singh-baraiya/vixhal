@@ -10,7 +10,7 @@ import TypewriterEffect from "@/components/typewriter-effect"
 export default function Home() {
   return (
    
-    <main className="min-h-screen bg-[#f8f5e6] text-[#333333] font-serif relative overflow-hidden">
+    <div className="min-h-screen bg-[#f8f5e6] text-[#333333] font-serif relative overflow-hidden">
       {/* Paper texture overlay */}
       <div
         className="absolute inset-0 pointer-events-none z-10 opacity-40"
@@ -301,7 +301,7 @@ export default function Home() {
           <p className="mt-1">Designed and Developed by Vishal Singh Baraiya</p>
         </div>
       </footer>
-    </main>
+    </div>
       
   )
 }
