@@ -9,7 +9,7 @@ import TypewriterEffect from "@/components/typewriter-effect"
 
 export default function Home() {
   return (
-    <>
+   
     <main className="min-h-screen bg-[#f8f5e6] text-[#333333] font-serif relative overflow-hidden">
       {/* Paper texture overlay */}
       <div
@@ -302,7 +302,7 @@ export default function Home() {
         </div>
       </footer>
     </main>
-    </>    
+      
   )
 }
 
