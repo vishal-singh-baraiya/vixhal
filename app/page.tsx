@@ -1,3 +1,4 @@
+import React from 'react';
 import { Newspaper, Github, Mail, Linkedin } from "lucide-react"
 import ProjectCard from "@/components/project-card"
 import SkillsGraph from "@/components/skills-graph"
