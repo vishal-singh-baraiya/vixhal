@@ -225,32 +225,54 @@ export default function Home() {
             ),
             
             // Technical expertise
-            React.createElement('div', { className: "md:w-1/2" },
-              React.createElement('h3', { className: "text-xl font-bold mb-4 border-b border-[#333333] pb-2" }, "Technical Expertise"),
-              React.createElement('div', { className: "grid grid-cols-2 gap-4" },
-                // Simplified for brevity - showing just one category
-                React.createElement('div', null,
-                  React.createElement('h4', { className: "font-bold mb-2" }, "Programming"),
-                  React.createElement('ul', { className: "list-disc pl-5 text-sm space-y-1" },
-                    React.createElement('li', null, "Python"),
-                    React.createElement('li', null, "Rust"),
-                    React.createElement('li', null, "Go"),
-                    React.createElement('li', null, "C/C++"),
-                    React.createElement('li', null, "JavaScript")
-                  )
-                ),
-                // Other categories would follow the same pattern
-                React.createElement('div', null,
-                  React.createElement('h4', { className: "font-bold mb-2" }, "Machine Learning"),
-                  React.createElement('ul', { className: "list-disc pl-5 text-sm space-y-1" },
-                    React.createElement('li', null, "Supervised Learning"),
-                    React.createElement('li', null, "Deep Learning"),
-                    React.createElement('li', null, "Natural Language Processing"),
-                    React.createElement('li', null, "Computer Vision")
-                  )
-                )
-              )
-            )
+            // For the Technical Expertise section in the skills area:
+
+React.createElement('div', { className: "md:w-1/2" },
+  React.createElement('h3', { className: "text-xl font-bold mb-4 border-b border-[#333333] pb-2" }, "Technical Expertise"),
+  React.createElement('div', { className: "grid grid-cols-2 gap-4" },
+    // Programming section
+    React.createElement('div', null,
+      React.createElement('h4', { className: "font-bold mb-2" }, "Programming"),
+      React.createElement('ul', { className: "list-disc pl-5 text-sm space-y-1" },
+        React.createElement('li', null, "Python"),
+        React.createElement('li', null, "Rust"),
+        React.createElement('li', null, "Go"),
+        React.createElement('li', null, "C/C++"),
+        React.createElement('li', null, "JavaScript")
+      )
+    ),
+    // Machine Learning section
+    React.createElement('div', null,
+      React.createElement('h4', { className: "font-bold mb-2" }, "Machine Learning"),
+      React.createElement('ul', { className: "list-disc pl-5 text-sm space-y-1" },
+        React.createElement('li', null, "Supervised Learning"),
+        React.createElement('li', null, "Deep Learning"),
+        React.createElement('li', null, "Natural Language Processing"),
+        React.createElement('li', null, "Computer Vision")
+      )
+    ),
+    // Data Engineering section (was missing)
+    React.createElement('div', null,
+      React.createElement('h4', { className: "font-bold mb-2" }, "Data Engineering"),
+      React.createElement('ul', { className: "list-disc pl-5 text-sm space-y-1" },
+        React.createElement('li', null, "ETL Pipelines"),
+        React.createElement('li', null, "Data Warehousing"),
+        React.createElement('li', null, "Big Data (Spark)"),
+        React.createElement('li', null, "Cloud Platforms")
+      )
+    ),
+    // Tools & Frameworks section (was missing)
+    React.createElement('div', null,
+      React.createElement('h4', { className: "font-bold mb-2" }, "Tools & Frameworks"),
+      React.createElement('ul', { className: "list-disc pl-5 text-sm space-y-1" },
+        React.createElement('li', null, "TensorFlow/PyTorch"),
+        React.createElement('li', null, "scikit-learn"),
+        React.createElement('li', null, "Pandas/NumPy"),
+        React.createElement('li', null, "Docker/Kubernetes")
+      )
+    )
+  )
+)
           )
         ),
         
