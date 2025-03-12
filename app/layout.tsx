@@ -15,9 +15,9 @@ const lora = Lora({
 })
 
 export const metadata: Metadata = {
-  title: "Data Science & AI Portfolio | The Daily Chronicle",
-  description: "A portfolio website for a Data Science and AI specialist, styled as an old newspaper.",
-    generator: 'v0.dev'
+  title: "The Vixhal Times",
+  description: "Vishal Singh Baraiya's Portfolio Website",
+    
 }
 
 export default function RootLayout({
