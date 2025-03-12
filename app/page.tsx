@@ -78,7 +78,7 @@ export default function Home() {
       React.createElement('div', { className: "max-w-6xl mx-auto px-4 md:px-8 py-8" },
         // About Section
         React.createElement('section', { id: "about", className: "mb-12" },
-          React.createElement(AnimatedHeadline, { text: "Data Science & AI Student" }),
+          React.createElement(AnimatedHeadline, { text: "Vishal Singh Baraiya" }),
           
           React.createElement('div', { className: "md:flex gap-6 mt-6" },
             // Left column
