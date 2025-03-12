@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 44 36% 95%;
+    --foreground: 20 14% 4%;
+
+    --card: 44 33% 93%;
+    --card-foreground: 20 14% 4%;
+
+    --popover: 44 36% 95%;
+    --popover-foreground: 20 14% 4%;
+
+    --primary: 20 14% 4%;
+    --primary-foreground: 44 36% 95%;
+
+    --secondary: 44 30% 88%;
+    --secondary-foreground: 20 14% 4%;
+
+    --muted: 44 25% 85%;
+    --muted-foreground: 20 10% 30%;
+
+    --accent: 44 30% 88%;
+    --accent-foreground: 20 14% 4%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 44 36% 95%;
+
+    --border: 20 14% 4%;
+    --input: 20 14% 4%;
+    --ring: 20 14% 4%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-lora), serif;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-playfair), serif;
+  }
+}
+
+/* Old newspaper texture and effects */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.05' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 100;
+}
+
+/* Wrinkle effect */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 800 800' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: 101;
+}
+
+/* First letter styling for newspaper effect */
+p.first-letter::first-letter {
+  font-size: 3.5em;
+  float: left;
+  line-height: 0.8;
+  margin-right: 0.1em;
+  font-weight: bold;
+}
+
+/* Newspaper column styling */
+.newspaper-columns {
+  column-count: 1;
+}
+
+@media (min-width: 768px) {
+  .newspaper-columns {
+    column-count: 2;
+    column-gap: 2rem;
+    column-rule: 1px solid #333;
+  }
+}
+
+/* Ink bleed effect for text */
+.ink-bleed {
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.02em;
+}
+
+/* Vintage button styling */
+.vintage-button {
+  background-color: #f0ead6;
+  border: 1px solid #333;
+  padding: 0.5rem 1rem;
+  font-family: var(--font-playfair), serif;
+  transition: all 0.2s;
+}
+
+.vintage-button:hover {
+  background-color: #333;
+  color: #f0ead6;
+}
+
